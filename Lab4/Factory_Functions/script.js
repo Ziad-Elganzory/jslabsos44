@@ -1,4 +1,4 @@
-function createPersonFactory(fullName, money, sleepMood, healthRate) {
+function Person(fullName, money, sleepMood, healthRate) {
     return {
         fullName,
         money,
@@ -40,7 +40,7 @@ let name = prompt("Enter Person's Name");
 let money = prompt("Enter Person's Money");
 let sleep = prompt("Enter Sleep Mode (Recommended: neutral)");
 let health = prompt("Enter Health Rate (in %)");
-let person1 = createPersonFactory(name, money, sleep, health);
+let person1 = Person(name, money, sleep, health);
 
 var exit = 1;
 
