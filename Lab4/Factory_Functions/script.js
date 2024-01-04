@@ -35,7 +35,7 @@ function Person(fullName, money, sleepMood, healthRate) {
     };
 }
 
-// Example usage
+
 let name = prompt("Enter Person's Name");
 let money = prompt("Enter Person's Money");
 let sleep = prompt("Enter Sleep Mode (Recommended: neutral)");
