@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form id="validation-form">
+        <input type="email" id="input-email" name="email" placeholder="Email" pattern="[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,4}$" required>
+        <p class="alert">Please Use The Default Email Pattern</p>
+
+        <input type="password" id="input-password" name="password" placeholder="Password" pattern="(?=^.{8,}$)(?=.*[A-Z])(?=.*[a-z]).*$" required>
+        <p class="alert">Password must contain small, capital letters, and numbers.</p>
+
+        <input id="submit-btn" type="submit" value="LOGIN">
+        <p class="paragraph">
+          Not registered?
+          <a class="link" href="#">Create Account</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
